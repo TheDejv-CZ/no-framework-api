@@ -179,18 +179,3 @@ To set up and run the PHP backend for the to-do list API, follow these steps:
     ```
    php -S localhost:8000 -t public
    ```
-4. **Docker Setup:** <br>
-   Create a `Dockerfile` with the following content:
-   ```
-   FROM php:7.4-cli
-   WORKDIR /app
-   COPY . /app
-   RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev
-   RUN docker-php-ext-install pdo_sqlite
-   CMD ["php", "-S", "0.0.0.0:8000"]
-   ```
-   Build and run the Docker container:
-   ```
-   docker build -t php-todo-app .
-   docker run -p 8000:8000 php-todo-app
-   ```
