@@ -34,8 +34,8 @@ curl -X POST http://localhost:8000/api/todos -H "Content-Type: application/json"
 ```
 {
   "id": 1,
-  "title": "Buy groceries",
-  "description": "Milk, Bread, Butter",
+  "title": "Title 1",
+  "description": "Description 1",
   "status": "pending"
 }
 ```
@@ -55,7 +55,7 @@ curl -X GET http://localhost:8000/api/todos'
 [
   {
     "id": 1,
-    "title": "Title 1"",
+    "title": "Title 1",
     "description": "Description 1",
     "status": "pending"
   },
@@ -85,8 +85,8 @@ curl -X GET http://localhost:8000/api/todos/1
 ```
 {
   "id": 1,
-  "title": "Buy groceries",
-  "description": "Milk, Bread, Butter",
+  "title": "Title 1",
+  "description": "Description 1",
   "status": "pending"
 }
 ```
